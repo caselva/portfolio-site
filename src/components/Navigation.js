@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, Collapse } from 'reactstrap';
+import Home from "../pages/Home";
 import '../App.css';
 
 class Navigation extends React.Component {
@@ -42,6 +43,9 @@ class Navigation extends React.Component {
                 </Nav>
               </Collapse>
             </Navbar>
+
+            <Route path="/" exact render={() => <Home/>} />
+
         </Container>
       </Router>
     );
