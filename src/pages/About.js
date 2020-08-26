@@ -4,10 +4,16 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      about: {
-        title: 'About Me'
-      }
+      title: 'About Me'
     }
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.title}
+      </div>
+    );
   }
 }
 

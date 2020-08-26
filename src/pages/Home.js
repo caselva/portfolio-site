@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 
 class Home extends React.Component {
   constructor(props) {
@@ -13,9 +14,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        {this.state.title} {this.state.subTitle}
-      </div>
+      <Hero title={this.state.title} subTitle={this.state.subTitle} text={this.state.text} />
     );
   }
 }

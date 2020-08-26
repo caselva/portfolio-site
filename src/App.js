@@ -17,7 +17,6 @@ function App() {
       <div>
         <Router>
           <Navigation />
-          {/* <Home /> */}
           <Footer />
         </Router>
       </div>

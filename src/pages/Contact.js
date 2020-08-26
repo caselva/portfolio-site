@@ -4,10 +4,16 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contact: {
-        title: 'Let\'s Talk'
-      }
+      title: 'Let\'s Talk'
     }
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.title}
+      </div>
+    );
   }
 }
 

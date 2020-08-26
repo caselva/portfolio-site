@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, Collapse } from 'reactstrap';
 import Home from "../pages/Home";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 import '../App.css';
 
 class Navigation extends React.Component {
@@ -45,6 +47,8 @@ class Navigation extends React.Component {
             </Navbar>
 
             <Route path="/" exact render={() => <Home/>} />
+            <Route path="/about" exact render={() => <About/>} />
+            <Route path="/contact" exact render={() => <Contact/>} />
 
         </Container>
       </Router>
