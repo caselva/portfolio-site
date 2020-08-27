@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Hero from '../components/Hero';
+import Carousel from '../components/Carousel';
 
 class Home extends React.Component {
   constructor(props) {
@@ -14,7 +15,10 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Hero title={this.state.title} subTitle={this.state.subTitle} text={this.state.text} />
+      <div>
+        <Hero title={this.state.title} subTitle={this.state.subTitle} text={this.state.text} />
+        <Carousel />
+      </div>
     );
   }
 }
