@@ -4,6 +4,7 @@ import { Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, C
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Footer from "./Footer";
 import '../App.css';
 
 class Navigation extends React.Component {
@@ -27,10 +28,10 @@ class Navigation extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
-          <Navbar color="light" light expand="md">
+        <Container fluid={true}>
+          <Navbar color="transparent" light expand="md">
             <NavbarBrand>Carlos Selva</NavbarBrand>
-            <NavbarToggler className="border-0" aria-controls="navbar-toggle" onClick={() => this.toggle()} />
+            <NavbarToggler aria-controls="navbar-toggle" onClick={() => this.toggle()} />
               <Collapse isOpen={this.state.collapse} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
@@ -45,11 +46,6 @@ class Navigation extends React.Component {
                 </Nav>
               </Collapse>
             </Navbar>
-
-            <Route path="/" exact render={() => <Home/>} />
-            <Route path="/about" exact render={() => <About/>} />
-            <Route path="/contact" exact render={() => <Contact/>} />
-
         </Container>
       </Router>
     );

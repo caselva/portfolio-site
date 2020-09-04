@@ -7,9 +7,10 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        title: 'Welcome to my Page!',
+        title: 'Hi, Im Carlos!',
         subTitle: 'Thanks for stoping by to check out what I am all about.',
-        text: 'Below you can find some of the work I have done'
+        text: 'Below you can find some of the work I have done',
+        // show: true
     }
   }
 
@@ -17,7 +18,9 @@ class Home extends React.Component {
     return (
       <div>
         <Hero title={this.state.title} subTitle={this.state.subTitle} text={this.state.text} />
-        <Carousel />
+        <div className="third">
+        <Carousel/>
+        </div>
       </div>
     );
   }
